@@ -4,53 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matemtikai Feladmány</title>
+    <title>Matemtikai Feladvány</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Matematikai Feladmány:</h1>
+    <h1>Matematikai Feladvány:</h1>
     <div class="container">
         <div class="piros9">
-            <img src="img/piros.png" alt="piros9">
+            <img id="piros" src="img/piros.png" alt="piros9">
         </div>
 
         <div class="kek0">
-            <img src="img/kek.png" alt="kek0">
+            <img id="kek" src="img/kek.png" alt="kek0">
         </div>
 
         <div class="plus">
-            <img src="img/pluszjel.png" alt="plus">
+            <img id="plus" src="img/pluszjel.png" alt="plus">
         </div>
 
         <div class="szurke1">
-            <img src="img/szurke.png" alt="szurke1">
+            <img id="szurke" src="img/szurke.png" alt="szurke1">
         </div>
 
         <div class="kek01">
-            <img src="img/kek.png" alt="kek0">
+            <img id="kekk" src="img/kek.png" alt="kek0">
         </div>
 
         <div class="vonal">
-            <img src="img/vonal.png" alt="vonal">
+            <img id="vonal" src="img/vonal.png" alt="vonal">
         </div>
 
         <div class="szurke11">
-            <img src="img/szurke.png" alt="szurke1">
+            <img id="szurk" src="img/szurke.png" alt="szurke1">
         </div>
 
         <div class="kek02">
-            <img src="img/kek.png" alt="kek0">
+            <img id="kkek" src="img/kek.png" alt="kek0">
         </div>
 
         <div class="kek03">
-            <img src="img/kek.png" alt="kek0">
+            <img id="keek" src="img/kek.png" alt="kek0">
         </div>
 
         <div class="egyenlosegjel">
-            <img src="img/egyenlo.png" alt="egyenlosegjel">
+            <img id="jel" src="img/egyenlo.png" alt="egyenlosegjel">
         </div>
         
     </div>
+    
+    <button onclick="myfun()">Alaphelyzet</button>
+    <button 
+    onclick="myfunction()";>
+     Megoldás </button>
+
+     <p id="ered">Eredmény:</p>
+
+     <script>
+         function myfunction() {
+            document.getElementById('piros').src='img/piros9.png';
+     document.getElementById('szurke').src='img/szurke1.png';
+     document.getElementById('kek').src='img/kek0.png';
+     document.getElementById('kekk').src='img/kek0.png';
+     document.getElementById('szurk').src='img/szurke1.png';
+     document.getElementById('kkek').src='img/kek0.png';
+     document.getElementById('keek').src='img/kek0.png';
+     document.getElementById('ered').innerHTML = 'Eredmény: 100';
+         }
+
+         function myfun() {
+            document.getElementById('piros').src='img/piros9.png';
+     document.getElementById('szurke').src='img/szurke.png';
+     document.getElementById('kek').src='img/kek.png';
+     document.getElementById('kekk').src='img/kek.png';
+     document.getElementById('szurk').src='img/szurke.png';
+     document.getElementById('kkek').src='img/kek.png';
+     document.getElementById('keek').src='img/kek.png';
+     document.getElementById('ered').innerHTML = 'Eredmény:';
+         }
+
+     </script>
     
 </body>
 </html>
